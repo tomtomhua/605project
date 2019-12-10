@@ -1,0 +1,17 @@
+universe = vanilla
+log = log/tsjob-chtc_$(Cluster).log
+error = log/tsjob-chtc_$(Cluster)_$(Process).err
+
+executable = ./ts.sh
+arguments = $(file)
+output = log/tsjob-chtc_$(Cluster)_$(Process).out
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = http://proxy.chtc.wisc.edu/SQUID/chtc/R361.tar.gz, packages.tar.gz, ts.R, /home/qwang382/605G13/data/mr_1_loc/mr_1_loc_$(file).csv
+
+request_cpus = 1
+request_memory = 1GB
+request_disk = 2GB
+
+queue file from LIST 

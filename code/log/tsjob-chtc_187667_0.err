@@ -1,0 +1,17 @@
+Registered S3 method overwritten by 'xts':
+  method     from
+  as.zoo.xts zoo 
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+Registered S3 methods overwritten by 'forecast':
+  method             from    
+  fitted.fracdiff    fracdiff
+  residuals.fracdiff fracdiff
+Error in .External2(C_X11, paste0("png::", filename), g$width, g$height,  : 
+  unable to start device PNG
+Calls: png
+In addition: Warning message:
+In png(paste0(args[1], ".png")) :
+  unable to open connection to X11 display ''
+Execution halted
