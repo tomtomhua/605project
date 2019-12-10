@@ -1,0 +1,8 @@
+---
+title: "Report"
+output: html_notebook
+---
+
+## Introduction
+
+In this project, we plan to analyse the environmental situations in different geographical areas, including their temperature, wind and degree of moisture. We want to know whether these features have an explainable regularity that can be use to predict, so as to have a better understanding of the earth we live in. Here we use merra data, which includes several climate features observed by metrorological staitions in recent 10 years. We form reasonable time series models to predict the related features. We find that our predict result have a same trend as the real data.
